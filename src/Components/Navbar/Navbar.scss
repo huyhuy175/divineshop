@@ -1,0 +1,174 @@
+.navbar{
+    background-color: #2579f2;
+    .line1{
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        .logohead,.searchbar,.cart,.user-navbar{
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin-top: 10px;
+        }
+        .logohead{
+            cursor: pointer;
+            img{
+                height: 60px;
+                margin-right: 10px;
+                color: white;
+            }
+            h1{
+                color: white;
+                font-weight: 500;
+                font-size: 36px;
+            }
+        }
+        .searchbar{
+            input{
+                height: 48px;
+                width: 367px;
+                border-radius: 6px 0px 0px 6px;
+                padding: 0px 14px;
+                font-size: 22px;
+                border: none;
+            }
+            .search-icon{
+                display: flex;
+                color: white;
+                height: 48px;
+                width: 48px;
+                border-radius: 0px 6px 6px 0px;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                background: #0a59cc;
+                padding: 0px 14px;
+                cursor: pointer;
+            }
+            .search-icon:hover{
+                opacity: 0.8;
+            }
+        }
+        
+        .user-navbar{
+            cursor: pointer;
+            .user-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                width: 48px;
+                height: 48px;
+                border: 1px solid white;
+                border-radius: 50%;
+                font-size: 25px;
+                margin-right: 5px;
+            }
+            .login,.signup{
+                color: white;
+                font-size: 22px;
+                padding: 0 5px;
+            }
+    
+        }
+        .cart{
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+            .cart-icon{
+                color: white;
+                font-size: 30px;
+                padding: 10px;
+            }
+            p{
+                color: white;
+                font-size: 22px;
+                padding-right: 10px;
+            }
+        }
+        .cart:hover{
+            opacity: 0.8;
+        }
+    }
+    .line2{
+        background-color: #2579f2;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        .icon{
+            color: white;
+            padding-right: 10px;
+            font-size: 20px;
+        }
+        .vuaxem,.muanhieu,.khuyenmai,.lienhe,.thanhtoan{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            p{
+                color:white;
+                font-size: 20px;
+            }
+        }
+        .vuaxem:hover,.muanhieu:hover,.khuyenmai:hover,.lienhe:hover,.thanhtoan:hover{
+            text-decoration: underline white;
+        }
+    }
+    .line3{
+        position: relative;
+        background-color: white;
+        width: 80%;
+        padding:0px 10%;
+        display: flex;
+        height: 60px;
+        align-items: center;
+        .danhmuc-left{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: context-menu;
+            .icon{
+                color: black;
+                margin-top: 1px;
+            }
+            p{
+                margin-left: 10px;
+            }
+        }
+        .danhmuc-right{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            right: 10%;
+            .giaitri,.lamviec,.hoctap,.steam,.window,.google{
+                display: flex;
+                align-items: center;
+                height: 60px;
+                cursor: pointer;
+                p{
+                    margin: 0px 10px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+            .giaitri:hover,.lamviec:hover,.hoctap:hover,.steam:hover,.window:hover,.google:hover{
+                p{
+                    text-decoration: underline ;
+                }
+            }
+            .icon{
+                color: #7b7b7b;
+                margin-left: 40px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.slideshow{
+    width: 800px;
+    height: 430px;
+    position: relative;
+    transition: transform 0.5s ease;
+    .myslides{
+        display: none;
+        transition: opacity 0.5s ease;
+    }
+    .myslides.active{
+        cursor: pointer;
+        display: block;
+        width: 800px;
+        height: 430px;
+        position: relative;
+        opacity: 1;
+    }
+    .hovernext{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 430px;
+    }
+    .hovernext:hover,.hoverprev:hover{
+        cursor: pointer;
+        opacity: 0.1;
+        background-color: #333;
+    }
+    .next{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 15px;
+        right: 30px;
+    }
+    .hoverprev{
+        position: absolute;
+        top: 0;
+        width: 80px;
+        height: 430px;
+    }
+    .prev{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 15px;
+        left: 30px;
+    }
+    .dots{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        .dot{
+            cursor: pointer;
+            height: 5px;
+            width: 20px;
+            margin: 0 2px;
+            background-color: rgba($color: #333, $alpha: 0.3);
+            border-radius: 10px;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .dot:hover{
+            background-color: #fff;
+        }
+        .dot.active{
+            background-color: #fff;
+            height: 5px;
+            width: 38px;
+        }
+        @keyframes fade{
+            0% {opacity: .4}
+            100% {opacity: 1}
+        }
+        .fade{
+            animation: fade;
+            animation-duration: 1.5s;
+        }
+    }
+}
